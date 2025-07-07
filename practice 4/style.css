@@ -1,0 +1,49 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    background: #FEB700;  <!-- так просто, а до этого создавал отдельный блок для фона -->
+    color: black;
+    font-size: 50px;
+    padding: 52px 367px 51px 368px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: white;
+    padding: 70px 70px 70px 70px;
+}
+
+.content-element{
+    border: 1px solid black;
+    width: 400px;
+    background: white;
+}
+
+.text-layout{
+    padding: 30px 33px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    p{
+        font-size: 20px;
+        font-family: "Times New Roman";
+    }
+}
+
+.footer{
+    height: 160px;
+    background: #FEB700;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
