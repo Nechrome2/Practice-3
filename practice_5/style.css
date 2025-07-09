@@ -1,0 +1,130 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    height: 140px;
+}
+
+p {
+    color: #E50043;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.header-left {
+    width: 65%;
+    background: white;
+    padding: 50px 0 50px 50px;
+}
+
+.header-right {
+    display: flex;
+    width: 35%;
+    justify-content: flex-end;
+    padding: 50px 50px 50px 0;
+    background: white;
+    gap: 25px;
+}
+
+.image-container {
+    width: 100%;
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+<!-- центрирование --> font-family: Arial;
+    font-size: 100px;
+    color: #E50043;
+    text-align: center;
+    white-space: nowrap;
+<!-- так третье слово не уходит вниз -->
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-text {
+    margin: 150px 200px;
+    /*padding отступы от текста не включая border, а margin включает границы */
+    padding: 24px;
+    border: 1px solid #E50043;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    p {
+        color: black;
+        font-size: 25px;
+        font-family: Arial;
+        gap: 25px;
+    }
+}
+
+.content-image {
+    /* padding-left: 200px;
+     padding-right: 200px;*/
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.image-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+
+    p {
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        font-family: Arial;
+    }
+}
+
+.content-text2 {
+    display: flex;
+    margin: 157px 200px 289px;
+    border: 1px solid #E50043;
+    border-radius: 10px;
+
+    img {
+        padding: 29px 80px 31px 80px;
+    }
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    padding: 29px 30px 31px 0;
+    gap: 30px;
+
+    p {
+        color: black;
+        font-size: 25px;
+        font-family: Arial;
+    }
+}
+
+.footer {
+    background: #F8BFC7;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+    p {
+        font-size: 50px;
+        font-family: Arial;
+        color: white;
+    }
+}
