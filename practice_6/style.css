@@ -1,11 +1,18 @@
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .header {
     background: #0000FF;
     display: flex;
+    width: 100%;
     align-items: center;
     height: 100px;
     padding-left: 30px;
@@ -18,24 +25,38 @@
     }
 }
 
+.content-outer {
+    height: calc(100vh - 200px);
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: scroll;
+}
+
 .content {
     display: flex;
-    justify-content: flex-start; /* выравнивание по левому краю*/
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     gap: 20px;
-    margin: 200px 110px;
+    max-width: 100%;
+}
+
+.content-element-border {
+    border: 3px solid black;
 }
 
 .content-element {
     position: relative;
-    border: 3px solid black;
+    flex: 0 0 43%;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 300px;
-    padding: 40px;
+
+    height: 294px;
 
     p {
         font-family: Helvetica;
@@ -86,6 +107,7 @@
     background: #0000FF;
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
@@ -99,7 +121,11 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
+    .content {
+        flex-direction: column;
+    }
+
     .delete {
         position: absolute;
         top: 0;
@@ -107,8 +133,8 @@
         color: white;
         width: 60px;
         height: 100%;
-        background: red;
         border: none;
+        border-radius: 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -129,5 +155,9 @@
         color: white;
         font-size: 32px;
         font-weight: bold;
+    }
+
+    .content-element {
+        flex: 0 0 10%;
     }
 }
