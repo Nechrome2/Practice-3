@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: #0000FF;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding-left: 30px;
+
+    p {
+        font-family: Helvetica;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start; /* выравнивание по левому краю*/
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 200px 110px;
+}
+
+.content-element {
+    position: relative;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    padding: 40px;
+
+    p {
+        font-family: Helvetica;
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+.delete {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.add-element {
+    border: 0;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus-text {
+    width: 60px;
+    height: 60px;
+    background: #2b5ce6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer {
+    background: #0000FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100px;
+
+    p {
+        font-family: Helvetica;
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 800px) {
+    .delete {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        width: 60px;
+        height: 100%;
+        background: red;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .add-element {
+        border: none;
+        height: 60px;
+        background: #2b5ce6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .plus-text {
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
