@@ -9,6 +9,7 @@
     <title>Practice 7</title>
 </head>
 <body>
+<script src="./index.js"></script>
 <div class="container">
     <div class="header">
         <div class="header-left">
@@ -24,7 +25,14 @@
 
     <div class="content">
         <div class="box">
-
+            <p>Имя</p>
+            <input type="text" value="Ира">
+            <p>Город</p>
+            <input type="text" value="Сочи">
+            <p>Подарок</p>
+            <input type="text" value="Книга в твердом переплете">
+            <p>Электронная почта</p>
+            <input type="text" value="daykiller@gmail.com">
         </div>
         <div class="button">ОТПРАВИТЬ</div>
     </div>
@@ -35,6 +43,16 @@
     <div class="footer">
         <p>СЕКРЕТНЫЕ ПОСЫЛКИ ДЛЯ ДРУЗЕЙ</p>
         <p>© 2023</p>
+    </div>
+    <div id="overlay"></div>
+    <div class="modal">
+        <div class="modal-content">
+            <h1>Учимся попапам!</h1>
+            <p>Нажмите ОК чтобы закрыть!</p>
+            <button id="button">
+                OK
+            </button>
+        </div>
     </div>
 </div>
 </body>
