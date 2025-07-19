@@ -3,7 +3,8 @@
     flex-direction: column;
 }
 
-#overlay {
+.overlay {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -13,7 +14,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#button {
+.button {
     width: 200px;
     height: 60px;
     margin-left: 120px;
